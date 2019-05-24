@@ -1,0 +1,220 @@
+Listening for transport dt_socket at address: 5001
+2019-03-03 22:40:25.431: DNA 启动...开始
+2019-03-03 22:40:25.432: DNA 启动...java version "1.8.0_111"
+2019-03-03 22:40:25.433: DNA 启动...Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+2019-03-03 22:40:25.433: DNA 启动...Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+2019-03-03 22:40:25.435: DNA 启动...应用ID：BF6BAE3F1BFA0DDFAE6A63764C681F47
+2019-03-03 22:40:25.840: DNA 启动...注册JDBC驱动[MySQLDriver5]，驱动版本[5.1]
+2019-03-03 22:40:25.943: DNA 启动...注册JDBC驱动[DB2Driver9]，驱动版本[3.1]
+2019-03-03 22:40:26.050: DNA 启动...注册JDBC驱动[OracleDriver11]，驱动版本[11.1]
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+java.lang.ClassNotFoundException: class in bundle[com.squarms.xoms.deploy.ui] not found: com.squarms.xoms.deploy.ui.XOMSConsoleEntry2
+	at com.jiuqi.dna.core.impl.BundleStub.loadClass(BundleStub.java:135)
+	at com.jiuqi.dna.ui.wt.internal.UIEntryInfo.<init>(UIEntryFactory.java:65)
+	at com.jiuqi.dna.ui.wt.internal.UIEntryFactory.parseElement(UIEntryFactory.java:47)
+	at com.jiuqi.dna.ui.wt.internal.UIEntryFactory.parseElement(UIEntryFactory.java:1)
+	at com.jiuqi.dna.core.spi.publish.NamedFactory.parseElement(NamedFactory.java:1)
+	at com.jiuqi.dna.core.impl.PublishedElementGatherer.gatherElement(PublishedElementGatherer.java:51)
+	at com.jiuqi.dna.core.impl.PublishedElementGathererGroup.gatherElement(PublishedElementGathererGroup.java:33)
+	at com.jiuqi.dna.core.impl.BundleStub.gatherElement(BundleStub.java:66)
+	at com.jiuqi.dna.core.impl.Site.doInit(Site.java:107)
+	at com.jiuqi.dna.core.impl.Site.active(Site.java:200)
+	at com.jiuqi.dna.core.impl.ApplicationImpl.<init>(ApplicationImpl.java:354)
+	at com.jiuqi.dna.core.impl.ApplicationImpl.startApp(ApplicationImpl.java:655)
+	at com.jiuqi.dna.core.impl.ApplicationLauncherImpl.launch(ApplicationLauncherImpl.java:28)
+	at com.jiuqi.dna.core.impl.ApplicationLauncherImpl.launch(ApplicationLauncherImpl.java:1)
+	at com.jiuqi.dna.core.jetty.AppLauncherTracker.addingService(AppLauncherTracker.java:29)
+	at com.jiuqi.dna.core.jetty.AppLauncherTracker.addingService(AppLauncherTracker.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:932)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:317)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261)
+	at com.jiuqi.dna.core.jetty.Activator.start(Activator.java:30)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1177)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.lang.ClassNotFoundException: com.squarms.xoms.deploy.ui.XOMSConsoleEntry2
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at com.jiuqi.dna.core.impl.BundleStub.loadClass(BundleStub.java:133)
+	... 37 more
+java.lang.ClassNotFoundException: class in bundle[com.squarms.xoms.deploy.ui] not found: com.squarms.xoms.deploy.ui.subsystem.PackageManagePage
+	at com.jiuqi.dna.core.impl.BundleStub.loadClass(BundleStub.java:135)
+	at com.jiuqi.dna.ui.wt.internal.PageInfo.<init>(PageInfo.java:16)
+	at com.jiuqi.dna.ui.wt.internal.PageFactory.parseElement(PageFactory.java:48)
+	at com.jiuqi.dna.ui.wt.internal.PageFactory.parseElement(PageFactory.java:1)
+	at com.jiuqi.dna.core.spi.publish.NamedFactory.parseElement(NamedFactory.java:1)
+	at com.jiuqi.dna.core.impl.PublishedElementGatherer.gatherElement(PublishedElementGatherer.java:51)
+	at com.jiuqi.dna.core.impl.PublishedElementGathererGroup.gatherElement(PublishedElementGathererGroup.java:33)
+	at com.jiuqi.dna.core.impl.BundleStub.gatherElement(BundleStub.java:66)
+	at com.jiuqi.dna.core.impl.Site.doInit(Site.java:107)
+	at com.jiuqi.dna.core.impl.Site.active(Site.java:200)
+	at com.jiuqi.dna.core.impl.ApplicationImpl.<init>(ApplicationImpl.java:354)
+	at com.jiuqi.dna.core.impl.ApplicationImpl.startApp(ApplicationImpl.java:655)
+	at com.jiuqi.dna.core.impl.ApplicationLauncherImpl.launch(ApplicationLauncherImpl.java:28)
+	at com.jiuqi.dna.core.impl.ApplicationLauncherImpl.launch(ApplicationLauncherImpl.java:1)
+	at com.jiuqi.dna.core.jetty.AppLauncherTracker.addingService(AppLauncherTracker.java:29)
+	at com.jiuqi.dna.core.jetty.AppLauncherTracker.addingService(AppLauncherTracker.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:932)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:317)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261)
+	at com.jiuqi.dna.core.jetty.Activator.start(Activator.java:30)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1177)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.lang.ClassNotFoundException: com.squarms.xoms.deploy.ui.subsystem.PackageManagePage
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at com.jiuqi.dna.core.impl.BundleStub.loadClass(BundleStub.java:133)
+	... 37 more
+2019-03-03 22:40:28.322: DNA 启动...实例化信息定义
+2019-03-03 22:40:28.335: DNA 启动...装载多语言信息
+2019-03-03 22:40:28.339: DNA 启动...准备启动站点
+2019-03-03 22:40:28.339: DNA 启动...实例化表定义
+2019-03-03 22:40:28.437: DNA 启动...确定表定义对其他元素的引用
+2019-03-03 22:40:28.440: DNA 启动...实例化ORM定义
+2019-03-03 22:40:28.468: DNA 启动...确定ORM定义对其他元素的引用
+2019-03-03 22:40:28.468: DNA 启动...初始化ORM定义
+2019-03-03 22:40:28.468: DNA 启动...实例化模型脚本引擎
+2019-03-03 22:40:28.486: DNA 启动...初始化群集资源模式
+2019-03-03 22:40:28.486: DNA 启动...实例化服务对象
+2019-03-03 22:40:28.619: DNA 启动...注册服务调用器
+2019-03-03 22:40:29.072: DNA 启动...确定资源定位信息
+2019-03-03 22:40:29.072: DNA 启动...确定资源引用信息
+2019-03-03 22:40:29.072: DNA 启动...初始化资源
+2019-03-03 22:40:29.259: DNA 启动...半启用日志管理器
+2019-03-03 22:40:29.259: DNA 启动...初始化服务
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2019-03-03 22:40:29.469: DNA 启动...启用日志管理器
+2019-03-03 22:40:29.469: DNA 启动...站点启动完成
+2019-03-03 22:40:29.469: DNA 启动...完毕
+osgi> java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+三月 03, 2019 10:42:13 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://ip.taobao.com:80: The target server failed to respond
+三月 03, 2019 10:42:13 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:11 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:11 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:14 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:14 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:19 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:19 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:22 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:22 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:23 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:23 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:24 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:24 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:26 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:26 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:28 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:28 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:29 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:29 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:29 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:29 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:31 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:31 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:31 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:31 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:34 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:34 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80
+三月 03, 2019 10:58:42 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: 连接超时 (Read failed)
+三月 03, 2019 10:58:42 下午 org.apache.http.impl.execchain.RetryExec execute
+信息: Retrying request to {}->http://ip.taobao.com:80

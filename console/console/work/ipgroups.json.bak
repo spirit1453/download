@@ -1,0 +1,57 @@
+[
+    {
+        "name": "TX7599",
+        "id": "TX7599",
+        "parentid": "YZH"
+    },
+    {
+        "name": "IP盒子",
+        "id": "HZ",
+        "parentid": "00000000000000000000000000000000"
+    },
+    {
+        "name": "TX4214",
+        "id": "TX4214",
+        "parentid": "YZH"
+    },
+    {
+        "name": "TX8747",
+        "id": "TX8747",
+        "parentid": "YZH"
+    },
+    {
+        "name": "TX3518",
+        "id": "TX3518",
+        "parentid": "YZH"
+    },
+    {
+        "name": "云账户",
+        "id": "YZH",
+        "parentid": "00000000000000000000000000000000"
+    },
+    {
+        "name": "其他",
+        "id": "QT",
+        "parentid": "00000000000000000000000000000000"
+    },
+    {
+        "name": "ALQS",
+        "id": "ALQS",
+        "parentid": "YZH"
+    },
+    {
+        "name": "TX2698",
+        "id": "TX2698",
+        "parentid": "YZH"
+    },
+    {
+        "name": "TX2182",
+        "id": "TX2182",
+        "parentid": "YZH"
+    },
+    {
+        "name": "TXCOOL",
+        "id": "TXCOOL",
+        "parentid": "YZH"
+    }
+]

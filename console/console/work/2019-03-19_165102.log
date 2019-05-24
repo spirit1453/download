@@ -1,0 +1,90 @@
+Listening for transport dt_socket at address: 5001
+2019-03-19 16:51:06.028: DNA 启动...开始
+2019-03-19 16:51:06.030: DNA 启动...java version "1.8.0_111"
+2019-03-19 16:51:06.030: DNA 启动...Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+2019-03-19 16:51:06.030: DNA 启动...Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+2019-03-19 16:51:06.031: DNA 启动...应用ID：066A794857D828DC0624C3EA7AD0B418
+2019-03-19 16:51:06.462: DNA 启动...注册JDBC驱动[MySQLDriver5]，驱动版本[5.1]
+2019-03-19 16:51:06.581: DNA 启动...注册JDBC驱动[DB2Driver9]，驱动版本[3.1]
+2019-03-19 16:51:06.685: DNA 启动...注册JDBC驱动[OracleDriver11]，驱动版本[11.1]
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+2019-03-19 16:51:08.948: DNA 启动...实例化信息定义
+2019-03-19 16:51:08.973: DNA 启动...装载多语言信息
+2019-03-19 16:51:08.977: DNA 启动...准备启动站点
+2019-03-19 16:51:08.978: DNA 启动...实例化表定义
+2019-03-19 16:51:09.080: DNA 启动...确定表定义对其他元素的引用
+2019-03-19 16:51:09.080: DNA 启动...实例化ORM定义
+2019-03-19 16:51:09.107: DNA 启动...确定ORM定义对其他元素的引用
+2019-03-19 16:51:09.108: DNA 启动...初始化ORM定义
+2019-03-19 16:51:09.108: DNA 启动...实例化模型脚本引擎
+2019-03-19 16:51:09.123: DNA 启动...初始化群集资源模式
+2019-03-19 16:51:09.124: DNA 启动...实例化服务对象
+2019-03-19 16:51:09.315: DNA 启动...注册服务调用器
+2019-03-19 16:51:09.794: DNA 启动...确定资源定位信息
+2019-03-19 16:51:09.794: DNA 启动...确定资源引用信息
+2019-03-19 16:51:09.797: DNA 启动...初始化资源
+2019-03-19 16:51:09.945: DNA 启动...半启用日志管理器
+2019-03-19 16:51:09.946: DNA 启动...初始化服务
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2019-03-19 16:51:10.077: DNA 启动...启用日志管理器
+2019-03-19 16:51:10.080: DNA 启动...站点启动完成
+2019-03-19 16:51:10.080: DNA 启动...完毕
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+osgi> Mar 19, 2019 4:56:40 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection reset
+Mar 19, 2019 4:56:40 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80

@@ -1,0 +1,373 @@
+Listening for transport dt_socket at address: 5001
+2019-03-05 22:11:09.281: DNA 启动...开始
+2019-03-05 22:11:09.284: DNA 启动...java version "1.8.0_111"
+2019-03-05 22:11:09.284: DNA 启动...Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+2019-03-05 22:11:09.284: DNA 启动...Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+2019-03-05 22:11:09.285: DNA 启动...应用ID：88E4FE23F417791D475E1C07454E953D
+2019-03-05 22:11:09.695: DNA 启动...注册JDBC驱动[MySQLDriver5]，驱动版本[5.1]
+2019-03-05 22:11:09.808: DNA 启动...注册JDBC驱动[DB2Driver9]，驱动版本[3.1]
+2019-03-05 22:11:09.911: DNA 启动...注册JDBC驱动[OracleDriver11]，驱动版本[11.1]
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+2019-03-05 22:11:12.008: DNA 启动...实例化信息定义
+2019-03-05 22:11:12.023: DNA 启动...装载多语言信息
+2019-03-05 22:11:12.024: DNA 启动...准备启动站点
+2019-03-05 22:11:12.024: DNA 启动...实例化表定义
+2019-03-05 22:11:12.145: DNA 启动...确定表定义对其他元素的引用
+2019-03-05 22:11:12.145: DNA 启动...实例化ORM定义
+2019-03-05 22:11:12.172: DNA 启动...确定ORM定义对其他元素的引用
+2019-03-05 22:11:12.173: DNA 启动...初始化ORM定义
+2019-03-05 22:11:12.173: DNA 启动...实例化模型脚本引擎
+2019-03-05 22:11:12.186: DNA 启动...初始化群集资源模式
+2019-03-05 22:11:12.186: DNA 启动...实例化服务对象
+2019-03-05 22:11:12.456: DNA 启动...注册服务调用器
+2019-03-05 22:11:13.032: DNA 启动...确定资源定位信息
+2019-03-05 22:11:13.039: DNA 启动...确定资源引用信息
+2019-03-05 22:11:13.039: DNA 启动...初始化资源
+2019-03-05 22:11:13.169: DNA 启动...半启用日志管理器
+2019-03-05 22:11:13.169: DNA 启动...初始化服务
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2019-03-05 22:11:13.355: DNA 启动...启用日志管理器
+2019-03-05 22:11:13.355: DNA 启动...站点启动完成
+2019-03-05 22:11:13.355: DNA 启动...完毕
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+osgi> java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: 等待结果超时
+	at com.squarms.deploy.core.GeneralDeployMinaService.sendMessage(GeneralDeployMinaService.java:204)
+	at com.squarms.deploy.core.RobotDeployMinaService.testAll(RobotDeployMinaService.java:79)
+	at com.squarms.xoms.deploy.core.internal.service.RobotStatusService$RobotTestTaskHandler.handle(RobotStatusService.java:62)
+	at com.squarms.xoms.deploy.core.internal.service.RobotStatusService$RobotTestTaskHandler.handle(RobotStatusService.java:1)
+	at com.jiuqi.dna.core.resource.ResourceService$SimpleTaskMethodHandler.handle(ResourceService.java:1)
+	at com.jiuqi.dna.core.impl.ServiceBase$TaskMethodHandler.handle(ServiceBase.java:1)
+	at com.jiuqi.dna.core.impl.ContextImpl.serviceHandleTask(ContextImpl.java:349)
+	at com.jiuqi.dna.core.impl.AsyncTaskImpl.workDoing(AsyncTaskImpl.java:146)
+	at com.jiuqi.dna.core.spi.work.Work.doWork(Work.java:345)
+	at com.jiuqi.dna.core.spi.work.WorkingThread.run(WorkingThread.java:44)
+Mar 05, 2019 10:14:57 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://ip.taobao.com:80: The target server failed to respond
+Mar 05, 2019 10:14:57 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+java.lang.IllegalStateException: 等待结果超时
+	at com.squarms.deploy.core.GeneralDeployMinaService.sendMessage(GeneralDeployMinaService.java:204)
+	at com.squarms.deploy.core.RobotDeployMinaService.testAll(RobotDeployMinaService.java:79)
+	at com.squarms.xoms.deploy.core.internal.service.RobotStatusService$RobotTestTaskHandler.handle(RobotStatusService.java:62)
+	at com.squarms.xoms.deploy.core.internal.service.RobotStatusService$RobotTestTaskHandler.handle(RobotStatusService.java:1)
+	at com.jiuqi.dna.core.resource.ResourceService$SimpleTaskMethodHandler.handle(ResourceService.java:1)
+	at com.jiuqi.dna.core.impl.ServiceBase$TaskMethodHandler.handle(ServiceBase.java:1)
+	at com.jiuqi.dna.core.impl.ContextImpl.serviceHandleTask(ContextImpl.java:349)
+	at com.jiuqi.dna.core.impl.AsyncTaskImpl.workDoing(AsyncTaskImpl.java:146)
+	at com.jiuqi.dna.core.spi.work.Work.doWork(Work.java:345)
+	at com.jiuqi.dna.core.spi.work.WorkingThread.run(WorkingThread.java:44)
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1437)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1461)
+	at com.squarms.deploy.core.RobotDeployMinaService.testAll(RobotDeployMinaService.java:78)
+	at com.squarms.xoms.deploy.core.internal.service.RobotStatusService$RobotTestTaskHandler.handle(RobotStatusService.java:62)
+	at com.squarms.xoms.deploy.core.internal.service.RobotStatusService$RobotTestTaskHandler.handle(RobotStatusService.java:1)
+	at com.jiuqi.dna.core.resource.ResourceService$SimpleTaskMethodHandler.handle(ResourceService.java:1)
+	at com.jiuqi.dna.core.impl.ServiceBase$TaskMethodHandler.handle(ServiceBase.java:1)
+	at com.jiuqi.dna.core.impl.ContextImpl.serviceHandleTask(ContextImpl.java:349)
+	at com.jiuqi.dna.core.impl.AsyncTaskImpl.workDoing(AsyncTaskImpl.java:146)
+	at com.jiuqi.dna.core.spi.work.Work.doWork(Work.java:345)
+	at com.jiuqi.dna.core.spi.work.WorkingThread.run(WorkingThread.java:44)
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1437)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1461)
+	at com.squarms.deploy.core.RobotDeployMinaService.testAll(RobotDeployMinaService.java:82)
+	at com.squarms.xoms.deploy.core.internal.service.RobotStatusService$RobotTestTaskHandler.handle(RobotStatusService.java:62)
+	at com.squarms.xoms.deploy.core.internal.service.RobotStatusService$RobotTestTaskHandler.handle(RobotStatusService.java:1)
+	at com.jiuqi.dna.core.resource.ResourceService$SimpleTaskMethodHandler.handle(ResourceService.java:1)
+	at com.jiuqi.dna.core.impl.ServiceBase$TaskMethodHandler.handle(ServiceBase.java:1)
+	at com.jiuqi.dna.core.impl.ContextImpl.serviceHandleTask(ContextImpl.java:349)
+	at com.jiuqi.dna.core.impl.AsyncTaskImpl.workDoing(AsyncTaskImpl.java:146)
+	at com.jiuqi.dna.core.spi.work.Work.doWork(Work.java:345)
+	at com.jiuqi.dna.core.spi.work.WorkingThread.run(WorkingThread.java:44)
+java.lang.RuntimeException: 在开始异步任务[com.squarms.xoms.deploy.core.internal.service.RobotStatusService$RobotTestTask]时发生异常。
+	at com.jiuqi.dna.core.impl.AsyncTaskImpl.workBeginning(AsyncTaskImpl.java:82)
+	at com.jiuqi.dna.core.spi.work.Work.beforeDoingNoSync(Work.java:279)
+	at com.jiuqi.dna.core.spi.work.Work.doWork(Work.java:323)
+	at com.jiuqi.dna.core.spi.work.WorkingThread.run(WorkingThread.java:44)
+Caused by: com.jiuqi.dna.core.exception.SessionDisposedException: 会话已经销毁或过期
+	at com.jiuqi.dna.core.impl.SessionImpl.checkNotDisposedNoSync(SessionImpl.java:641)
+	at com.jiuqi.dna.core.impl.SessionImpl.contextCreated(SessionImpl.java:343)
+	at com.jiuqi.dna.core.impl.ContextImpl.<init>(ContextImpl.java:1092)
+	at com.jiuqi.dna.core.impl.SessionImpl.newContext(SessionImpl.java:505)
+	at com.jiuqi.dna.core.impl.AsyncServiceInvoke.workBeginning(AsyncServiceInvoke.java:30)
+	at com.jiuqi.dna.core.impl.AsyncTaskImpl.workBeginning(AsyncTaskImpl.java:80)
+	... 3 more
+Mar 05, 2019 10:32:33 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection timed out (Read failed)
+Mar 05, 2019 10:32:33 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+Mar 05, 2019 10:32:54 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection timed out (Read failed)
+Mar 05, 2019 10:32:54 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+Mar 05, 2019 10:32:57 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection timed out (Read failed)
+Mar 05, 2019 10:32:57 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+Mar 05, 2019 10:32:58 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection timed out (Read failed)
+Mar 05, 2019 10:32:58 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+Mar 05, 2019 10:32:58 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection timed out (Read failed)
+Mar 05, 2019 10:32:58 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+Mar 05, 2019 10:32:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection timed out (Read failed)
+Mar 05, 2019 10:32:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+Mar 05, 2019 10:33:53 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection timed out (Read failed)
+Mar 05, 2019 10:33:53 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+Mar 05, 2019 10:33:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection timed out (Read failed)
+Mar 05, 2019 10:33:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+Mar 05, 2019 10:34:09 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://ip.taobao.com:80: Connection timed out (Read failed)
+Mar 05, 2019 10:34:09 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://ip.taobao.com:80
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.UnsupportedOperationException: 不允许通过其他线程访问上下文
+	at com.jiuqi.dna.core.impl.ContextImpl.checkValid(ContextImpl.java:3596)
+	at com.jiuqi.dna.core.impl.ContextImpl.doAsyncHandle(ContextImpl.java:421)
+	at com.jiuqi.dna.core.impl.ContextImpl.asyncHandle(ContextImpl.java:475)
+	at com.squarms.deploy.core.GeneralDeployMinaService.messageReceived(GeneralDeployMinaService.java:97)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:858)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:398)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:234)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1300(DefaultIoFilterChain.java:48)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:947)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:542)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:535)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:703)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000007768fe000, 343711744, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 343711744 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /opt/console/hs_err_pid20403.log

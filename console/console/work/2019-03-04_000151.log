@@ -1,0 +1,35 @@
+Listening for transport dt_socket at address: 5001
+2019-03-04 00:01:54.474: DNA 启动...开始
+2019-03-04 00:01:54.477: DNA 启动...java version "1.8.0_111"
+2019-03-04 00:01:54.477: DNA 启动...Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+2019-03-04 00:01:54.477: DNA 启动...Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+2019-03-04 00:01:54.478: DNA 启动...应用ID：EB68B3F656D29B2D16FC32CE7CD3CA4C
+2019-03-04 00:01:55.051: DNA 启动...注册JDBC驱动[MySQLDriver5]，驱动版本[5.1]
+2019-03-04 00:01:55.159: DNA 启动...注册JDBC驱动[DB2Driver9]，驱动版本[3.1]
+2019-03-04 00:01:55.256: DNA 启动...注册JDBC驱动[OracleDriver11]，驱动版本[11.1]
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+2019-03-04 00:01:57.500: DNA 启动...实例化信息定义
+2019-03-04 00:01:57.516: DNA 启动...装载多语言信息
+2019-03-04 00:01:57.520: DNA 启动...准备启动站点
+2019-03-04 00:01:57.521: DNA 启动...实例化表定义
+2019-03-04 00:01:57.624: DNA 启动...确定表定义对其他元素的引用
+2019-03-04 00:01:57.625: DNA 启动...实例化ORM定义
+2019-03-04 00:01:57.657: DNA 启动...确定ORM定义对其他元素的引用
+2019-03-04 00:01:57.657: DNA 启动...初始化ORM定义
+2019-03-04 00:01:57.657: DNA 启动...实例化模型脚本引擎
+2019-03-04 00:01:57.671: DNA 启动...初始化群集资源模式
+2019-03-04 00:01:57.671: DNA 启动...实例化服务对象
+2019-03-04 00:01:57.797: DNA 启动...注册服务调用器
+2019-03-04 00:01:58.151: DNA 启动...确定资源定位信息
+2019-03-04 00:01:58.151: DNA 启动...确定资源引用信息
+2019-03-04 00:01:58.151: DNA 启动...初始化资源
+2019-03-04 00:01:58.238: DNA 启动...半启用日志管理器
+2019-03-04 00:01:58.238: DNA 启动...初始化服务
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2019-03-04 00:01:58.479: DNA 启动...启用日志管理器
+2019-03-04 00:01:58.479: DNA 启动...站点启动完成
+2019-03-04 00:01:58.479: DNA 启动...完毕
+osgi> 

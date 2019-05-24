@@ -1,0 +1,56 @@
+[
+    {
+        "balance": "74",
+        "balanceDate": "2019-03-10",
+        "name": "TX7599",
+        "id": "TX7599"
+    },
+    {
+        "balance": "207",
+        "balanceDate": "2019-03-10",
+        "name": "TX4214",
+        "id": "TX4214"
+    },
+    {
+        "balance": "219",
+        "balanceDate": "2019-03-10",
+        "name": "TX8747",
+        "id": "TX8747"
+    },
+    {
+        "balance": "175",
+        "balanceDate": "2019-03-10",
+        "name": "TX3518",
+        "id": "TX3518"
+    },
+    {
+        "balance": "1000",
+        "balanceDate": "2018-11-26",
+        "name": "ALQS",
+        "id": "ALQS"
+    },
+    {
+        "balance": "130",
+        "balanceDate": "2019-03-10",
+        "name": "TXCOOL",
+        "id": "TXCOOL"
+    },
+    {
+        "balance": "158",
+        "balanceDate": "2019-03-10",
+        "name": "TX2182",
+        "id": "TX2182"
+    },
+    {
+        "balance": "195",
+        "balanceDate": "2019-03-10",
+        "name": "TX2698",
+        "id": "TX2698"
+    },
+    {
+        "balance": "564",
+        "balanceDate": "2019-03-04",
+        "name": "TX9588",
+        "id": "TX9588"
+    }
+]

@@ -1,0 +1,57 @@
+Listening for transport dt_socket at address: 5001
+2019-03-03 21:22:22.694: DNA 启动...开始
+2019-03-03 21:22:22.695: DNA 启动...java version "1.8.0_111"
+2019-03-03 21:22:22.695: DNA 启动...Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+2019-03-03 21:22:22.695: DNA 启动...Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+2019-03-03 21:22:22.698: DNA 启动...应用ID：234EDA045FBC09DA88AC4D93AC73BCA4
+2019-03-03 21:22:23.103: DNA 启动...注册JDBC驱动[MySQLDriver5]，驱动版本[5.1]
+2019-03-03 21:22:23.222: DNA 启动...注册JDBC驱动[DB2Driver9]，驱动版本[3.1]
+2019-03-03 21:22:23.330: DNA 启动...注册JDBC驱动[OracleDriver11]，驱动版本[11.1]
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+2019-03-03 21:22:25.569: DNA 启动...实例化信息定义
+2019-03-03 21:22:25.580: DNA 启动...装载多语言信息
+2019-03-03 21:22:25.584: DNA 启动...准备启动站点
+2019-03-03 21:22:25.584: DNA 启动...实例化表定义
+2019-03-03 21:22:25.690: DNA 启动...确定表定义对其他元素的引用
+2019-03-03 21:22:25.696: DNA 启动...实例化ORM定义
+2019-03-03 21:22:25.725: DNA 启动...确定ORM定义对其他元素的引用
+2019-03-03 21:22:25.726: DNA 启动...初始化ORM定义
+2019-03-03 21:22:25.726: DNA 启动...实例化模型脚本引擎
+2019-03-03 21:22:25.738: DNA 启动...初始化群集资源模式
+2019-03-03 21:22:25.739: DNA 启动...实例化服务对象
+2019-03-03 21:22:25.880: DNA 启动...注册服务调用器
+2019-03-03 21:22:26.226: DNA 启动...确定资源定位信息
+2019-03-03 21:22:26.226: DNA 启动...确定资源引用信息
+2019-03-03 21:22:26.227: DNA 启动...初始化资源
+2019-03-03 21:22:26.317: DNA 启动...半启用日志管理器
+2019-03-03 21:22:26.317: DNA 启动...初始化服务
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9802
+original message : 地址已在使用
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:238)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:51)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor.registerHandles(AbstractPollingIoAcceptor.java:586)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor.access$400(AbstractPollingIoAcceptor.java:71)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:454)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9801
+original message : 地址已在使用
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:238)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:51)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor.registerHandles(AbstractPollingIoAcceptor.java:586)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor.access$400(AbstractPollingIoAcceptor.java:71)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:454)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-03-03 21:22:26.505: DNA 启动...启用日志管理器
+2019-03-03 21:22:26.506: DNA 启动...站点启动完成
+2019-03-03 21:22:26.506: DNA 启动...完毕
+osgi> 

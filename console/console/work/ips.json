@@ -1,0 +1,732 @@
+[
+    {
+        "ip": "",
+        "groupid": "TX4214",
+        "id": "TX4214GZPROXY2"
+    },
+    {
+        "ip": "111.230.182.246",
+        "groupid": "TX7599",
+        "id": "TX7599GZS3"
+    },
+    {
+        "ip": "193.112.174.128",
+        "groupid": "TX4214",
+        "id": "TX4214GZPROXY3"
+    },
+    {
+        "ip": "119.29.25.161",
+        "groupid": "TX4214",
+        "id": "TX4214GZPROXY4"
+    },
+    {
+        "ip": "182.254.234.209",
+        "groupid": "TX4214",
+        "id": "TX4214GZPROXY5"
+    },
+    {
+        "ip": "119.29.7.74",
+        "groupid": "TX4214",
+        "id": "TX4214GZPROXY1"
+    },
+    {
+        "ip": "119.29.39.228",
+        "groupid": "TX2182",
+        "id": "TX2182GZPROXY2"
+    },
+    {
+        "ip": "122.152.225.80",
+        "groupid": "TX2182",
+        "id": "TX2182GZPROXY3"
+    },
+    {
+        "ip": "119.29.209.121",
+        "groupid": "TX2182",
+        "id": "TX2182GZPROXY4"
+    },
+    {
+        "ip": "154.8.214.138",
+        "groupid": "TX7599",
+        "id": "TX7599BJPROXY6"
+    },
+    {
+        "ip": "119.29.219.105",
+        "groupid": "TX3518",
+        "id": "TX3518GZPROXY3"
+    },
+    {
+        "ip": "123.207.29.118",
+        "groupid": "TX3518",
+        "id": "TX3518GZPROXY2"
+    },
+    {
+        "ip": "152.136.33.172",
+        "groupid": "TX7599",
+        "id": "TX7599BJPROXY8"
+    },
+    {
+        "ip": "139.199.158.173",
+        "groupid": "TX3518",
+        "id": "TX3518GZPROXY5"
+    },
+    {
+        "ip": "139.199.155.116",
+        "groupid": "TX2182",
+        "id": "TX2182GZPROXY1"
+    },
+    {
+        "ip": "139.199.107.33",
+        "groupid": "TX8747",
+        "id": "TX8747BJPROXY4"
+    },
+    {
+        "ip": "123.206.30.197",
+        "groupid": "TX8747",
+        "id": "TX8747BJPROXY1"
+    },
+    {
+        "ip": "139.199.123.191",
+        "groupid": "TX8747",
+        "id": "TX8747BJPROXY3"
+    },
+    {
+        "ip": "123.206.200.95",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLSHS1"
+    },
+    {
+        "ip": "123.207.172.117",
+        "groupid": "TX8747",
+        "id": "TX8747BJPROXY2"
+    },
+    {
+        "ip": "123.206.201.79",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLSHS2"
+    },
+    {
+        "ip": "212.64.20.132",
+        "groupid": "TX9588",
+        "id": "TX9588SHPROXY5"
+    },
+    {
+        "ip": "212.64.101.80",
+        "groupid": "TX9588",
+        "id": "TX9588SHPROXY6"
+    },
+    {
+        "ip": "212.64.102.240",
+        "groupid": "TX9588",
+        "id": "TX9588SHPROXY7"
+    },
+    {
+        "ip": "212.64.100.176",
+        "groupid": "TX9588",
+        "id": "TX9588SHPROXY8"
+    },
+    {
+        "ip": "111.231.105.143",
+        "groupid": "TX9588",
+        "id": "TX9588SHPROXY1"
+    },
+    {
+        "ip": "118.25.96.106 ",
+        "groupid": "TX9588",
+        "id": "TX9588SHPROXY2"
+    },
+    {
+        "ip": "111.231.104.250",
+        "groupid": "TX9588",
+        "id": "TX9588SHPROXY3"
+    },
+    {
+        "ip": "212.64.17.85",
+        "groupid": "TX9588",
+        "id": "TX9588SHPROXY4"
+    },
+    {
+        "ip": "139.199.20.170",
+        "groupid": "TX2182",
+        "id": "TX2182BJS2"
+    },
+    {
+        "ip": "123.207.153.163",
+        "groupid": "TX2182",
+        "id": "TX2182BJS1"
+    },
+    {
+        "ip": "115.159.73.168",
+        "groupid": "TX8747",
+        "id": "TX8747SHPROXY1"
+    },
+    {
+        "ip": "182.254.208.37",
+        "groupid": "TX8747",
+        "id": "TX8747SHPROXY2"
+    },
+    {
+        "ip": "122.152.233.142",
+        "groupid": "TX2698",
+        "id": "TX2698GZPROXY1"
+    },
+    {
+        "ip": "123.206.7.235",
+        "groupid": "TX2698",
+        "id": "TX2698BJPROXY4"
+    },
+    {
+        "ip": "115.159.65.141",
+        "groupid": "TX4214",
+        "id": "TX4214SHPROXY1"
+    },
+    {
+        "ip": "139.199.104.42",
+        "groupid": "TX2698",
+        "id": "TX2698BJPROXY3"
+    },
+    {
+        "ip": "119.29.121.80",
+        "groupid": "TX2698",
+        "id": "TX2698GZPROXY3"
+    },
+    {
+        "ip": "119.29.108.251",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLGZPROXY1"
+    },
+    {
+        "ip": "111.230.67.54",
+        "groupid": "TX2698",
+        "id": "TX2698GZPROXY2"
+    },
+    {
+        "ip": "140.143.58.74",
+        "groupid": "TX2698",
+        "id": "TX2698BJPROXY5"
+    },
+    {
+        "ip": "119.29.20.84",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLGZPROXY2"
+    },
+    {
+        "ip": "182.254.233.217",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLGZPROXY3"
+    },
+    {
+        "ip": "119.29.96.228",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLGZPROXY4"
+    },
+    {
+        "ip": "139.199.99.197",
+        "groupid": "TX2698",
+        "id": "TX2698BJPROXY2"
+    },
+    {
+        "ip": "111.230.61.103",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLGZPROXY5"
+    },
+    {
+        "ip": "118.89.240.89",
+        "groupid": "TX2698",
+        "id": "TX2698BJPROXY1"
+    },
+    {
+        "ip": "119.29.41.68",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLGZPROXY6"
+    },
+    {
+        "ip": "134.175.177.194",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLGZPROXY7"
+    },
+    {
+        "ip": "182.254.136.229",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLSHPROXY4"
+    },
+    {
+        "ip": "182.254.240.67",
+        "groupid": "TX2698",
+        "id": "TX2698SHPROXY1"
+    },
+    {
+        "ip": "139.199.205.59",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLGZB1"
+    },
+    {
+        "ip": "111.230.104.72",
+        "groupid": "TX7599",
+        "id": "TX7599GZPROXY7"
+    },
+    {
+        "ip": "182.254.215.126",
+        "groupid": "TX2698",
+        "id": "TX2698SHS4"
+    },
+    {
+        "ip": "123.207.251.209",
+        "groupid": "TX7599",
+        "id": "TX7599GZPROXY5"
+    },
+    {
+        "ip": "182.254.152.166",
+        "groupid": "TX2698",
+        "id": "TX2698SHS5"
+    },
+    {
+        "ip": "123.207.57.130",
+        "groupid": "TX7599",
+        "id": "TX7599GZPROXY6"
+    },
+    {
+        "ip": "182.254.154.182",
+        "groupid": "TX2698",
+        "id": "TX2698SHS6"
+    },
+    {
+        "ip": "123.206.107.11",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLSHPROXY2"
+    },
+    {
+        "ip": "123.206.107.111",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLSHPROXY3"
+    },
+    {
+        "ip": "134.175.248.62",
+        "groupid": "TX7599",
+        "id": "TX7599GZPROXY4"
+    },
+    {
+        "ip": "115.159.153.87",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLSHPROXY1"
+    },
+    {
+        "ip": "123.206.216.204",
+        "groupid": "TX8747",
+        "id": "TX8747SHS2"
+    },
+    {
+        "ip": "182.254.146.130",
+        "groupid": "TX8747",
+        "id": "TX8747SHS3"
+    },
+    {
+        "ip": "192.144.190.186",
+        "groupid": "TX2182",
+        "id": "TX2182BJPROXY5"
+    },
+    {
+        "ip": "139.199.164.93",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLGZS1"
+    },
+    {
+        "ip": "192.144.190.242",
+        "groupid": "TX2182",
+        "id": "TX2182BJPROXY6"
+    },
+    {
+        "ip": "192.144.174.190",
+        "groupid": "TX2182",
+        "id": "TX2182BJPROXY4"
+    },
+    {
+        "ip": "123.206.123.219",
+        "groupid": "TX8747",
+        "id": "TX8747SHS4"
+    },
+    {
+        "ip": "192.144.171.189",
+        "groupid": "TX2182",
+        "id": "TX2182BJPROXY2"
+    },
+    {
+        "ip": "192.144.173.51",
+        "groupid": "TX9588",
+        "id": "TX9588BJPROXY2"
+    },
+    {
+        "ip": "140.143.187.229",
+        "groupid": "TX9588",
+        "id": "TX9588BJPROXY3"
+    },
+    {
+        "ip": "192.144.151.201",
+        "groupid": "TX9588",
+        "id": "TX9588BJPROXY4"
+    },
+    {
+        "ip": "192.144.184.41",
+        "groupid": "TX9588",
+        "id": "TX9588BJPROXY5"
+    },
+    {
+        "ip": "212.64.67.94",
+        "groupid": "TX2698",
+        "id": "TX2698SHPROXY6"
+    },
+    {
+        "ip": "212.64.67.205",
+        "groupid": "TX2698",
+        "id": "TX2698SHPROXY5"
+    },
+    {
+        "ip": "172.81.208.47",
+        "groupid": "TX2698",
+        "id": "TX2698SHPROXY4"
+    },
+    {
+        "ip": "192.144.170.207",
+        "groupid": "TX9588",
+        "id": "TX9588BJPROXY1"
+    },
+    {
+        "ip": "115.159.30.150",
+        "groupid": "TX3518",
+        "id": "TX3518SHPROXY4"
+    },
+    {
+        "ip": "182.254.158.130",
+        "groupid": "TX3518",
+        "id": "TX3518SHPROXY5"
+    },
+    {
+        "ip": "115.159.22.107",
+        "groupid": "TX3518",
+        "id": "TX3518SHPROXY6"
+    },
+    {
+        "ip": "193.112.140.113",
+        "groupid": "TX9588",
+        "id": "TX9588GZPROXY2"
+    },
+    {
+        "ip": "140.143.224.205",
+        "groupid": "TX9588",
+        "id": "TX9588BJPROXY7"
+    },
+    {
+        "ip": "111.230.212.155",
+        "groupid": "TX9588",
+        "id": "TX9588GZPROXY1"
+    },
+    {
+        "ip": "140.143.207.231",
+        "groupid": "TX9588",
+        "id": "TX9588BJPROXY6"
+    },
+    {
+        "ip": "154.8.218.215",
+        "groupid": "TX9588",
+        "id": "TX9588BJPROXY8"
+    },
+    {
+        "ip": "62.234.169.77",
+        "groupid": "TX3518",
+        "id": "TX3518BJPROXY9"
+    },
+    {
+        "ip": "118.126.95.227",
+        "groupid": "TX9588",
+        "id": "TX9588GZPROXY6"
+    },
+    {
+        "ip": "193.112.247.193",
+        "groupid": "TX9588",
+        "id": "TX9588GZPROXY5"
+    },
+    {
+        "ip": "193.112.153.89 ",
+        "groupid": "TX9588",
+        "id": "TX9588GZPROXY4"
+    },
+    {
+        "ip": "115.159.188.186",
+        "groupid": "TX4214",
+        "id": "TX4214SHPROXY9"
+    },
+    {
+        "ip": "111.230.181.247",
+        "groupid": "TX9588",
+        "id": "TX9588GZPROXY3"
+    },
+    {
+        "ip": "115.159.143.199",
+        "groupid": "TX4214",
+        "id": "TX4214SHPROXY8"
+    },
+    {
+        "ip": "123.207.181.148",
+        "groupid": "TX3518",
+        "id": "TX3518SHPROXY1"
+    },
+    {
+        "ip": "193.112.167.108",
+        "groupid": "TX9588",
+        "id": "TX9588GZPROXY8"
+    },
+    {
+        "ip": "115.159.28.165",
+        "groupid": "TX3518",
+        "id": "TX3518SHPROXY2"
+    },
+    {
+        "ip": "193.112.250.110",
+        "groupid": "TX9588",
+        "id": "TX9588GZPROXY7"
+    },
+    {
+        "ip": "115.159.37.75",
+        "groupid": "TX3518",
+        "id": "TX3518SHPROXY3"
+    },
+    {
+        "ip": "123.207.141.54",
+        "groupid": "TX3518",
+        "id": "TX3518BJPROXY4"
+    },
+    {
+        "ip": "115.159.67.203",
+        "groupid": "TX2182",
+        "id": "TX2182SHPROXY3"
+    },
+    {
+        "ip": "139.199.116.130",
+        "groupid": "TX3518",
+        "id": "TX3518BJPROXY3"
+    },
+    {
+        "ip": "118.89.246.251",
+        "groupid": "TX3518",
+        "id": "TX3518BJPROXY6"
+    },
+    {
+        "ip": "123.206.25.99",
+        "groupid": "TX3518",
+        "id": "TX3518BJPROXY5"
+    },
+    {
+        "ip": "62.234.202.237",
+        "groupid": "TX3518",
+        "id": "TX3518BJPROXY8"
+    },
+    {
+        "ip": "154.8.211.60",
+        "groupid": "TX3518",
+        "id": "TX3518BJPROXY7"
+    },
+    {
+        "ip": "115.159.157.131",
+        "groupid": "TX2182",
+        "id": "TX2182SHPROXY5"
+    },
+    {
+        "ip": "115.159.100.139",
+        "groupid": "TX2182",
+        "id": "TX2182SHPROXY4"
+    },
+    {
+        "ip": "123.207.70.137",
+        "groupid": "TX8747",
+        "id": "TX8747GZA1"
+    },
+    {
+        "ip": "118.89.246.30",
+        "groupid": "TX2182",
+        "id": "TX2182BJB1"
+    },
+    {
+        "ip": "118.89.106.78",
+        "groupid": "TX7599",
+        "id": "TX7599SHPROXY7"
+    },
+    {
+        "ip": "123.206.191.61",
+        "groupid": "TX7599",
+        "id": "TX7599SHPROXY8"
+    },
+    {
+        "ip": "118.89.110.37",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLSHA1"
+    },
+    {
+        "ip": "123.207.165.106",
+        "groupid": "TX2698",
+        "id": "TX2698BJS2"
+    },
+    {
+        "ip": "123.207.147.196",
+        "groupid": "TX2698",
+        "id": "TX2698BJS3"
+    },
+    {
+        "ip": "139.199.208.210",
+        "groupid": "TX2182",
+        "id": "TX2182GZS1"
+    },
+    {
+        "ip": "119.29.159.26",
+        "groupid": "TX8747",
+        "id": "TX8747GZS2"
+    },
+    {
+        "ip": "123.207.54.23",
+        "groupid": "TX8747",
+        "id": "TX8747GZS3"
+    },
+    {
+        "ip": "123.207.75.170",
+        "groupid": "TX2182",
+        "id": "TX2182GZS3"
+    },
+    {
+        "ip": "123.206.32.20",
+        "groupid": "TX2182",
+        "id": "TX2182BJA1"
+    },
+    {
+        "ip": "115.159.180.214",
+        "groupid": "TX8747",
+        "id": "TX8747SHPROXY3"
+    },
+    {
+        "ip": "115.159.93.108",
+        "groupid": "TX8747",
+        "id": "TX8747SHPROXY4"
+    },
+    {
+        "ip": "118.89.220.39",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLBJS1"
+    },
+    {
+        "ip": "58.87.94.7",
+        "groupid": "TX7599",
+        "id": "TX7599BJA1"
+    },
+    {
+        "ip": "119.29.55.143",
+        "groupid": "TX8747",
+        "id": "TX8747GZPROXY1"
+    },
+    {
+        "ip": "111.230.200.136",
+        "groupid": "TX8747",
+        "id": "TX8747GZPROXY2"
+    },
+    {
+        "ip": "115.159.192.109",
+        "groupid": "TX2182",
+        "id": "TX2182SHS2"
+    },
+    {
+        "ip": "115.159.50.120",
+        "groupid": "TX2182",
+        "id": "TX2182SHS1"
+    },
+    {
+        "ip": "118.89.146.245",
+        "groupid": "TX7599",
+        "id": "TX7599SHPROXY6"
+    },
+    {
+        "ip": "115.159.160.134",
+        "groupid": "TX7599",
+        "id": "TX7599SHPROXY5"
+    },
+    {
+        "ip": "123.207.66.177",
+        "groupid": "TX2698",
+        "id": "TX2698GZS4"
+    },
+    {
+        "ip": "115.159.62.252",
+        "groupid": "TX7599",
+        "id": "TX7599SHPROXY3"
+    },
+    {
+        "ip": "118.89.54.153",
+        "groupid": "TX2698",
+        "id": "TX2698GZS3"
+    },
+    {
+        "ip": "139.199.119.164",
+        "groupid": "TX8747",
+        "id": "TX8747BJB1"
+    },
+    {
+        "ip": "",
+        "groupid": "ALQS",
+        "id": "120.78.74.124"
+    },
+    {
+        "ip": "",
+        "groupid": "TX4214",
+        "id": "TX4214GZPROXY6"
+    },
+    {
+        "ip": "",
+        "groupid": "TX4214",
+        "id": "TX4214GZPROXY7"
+    },
+    {
+        "ip": "115.159.187.127",
+        "groupid": "TX2182",
+        "id": "TX2182SHB1"
+    },
+    {
+        "ip": "115.159.88.166",
+        "groupid": "TX7599",
+        "id": "TX7599SHS1"
+    },
+    {
+        "ip": "",
+        "groupid": "TX4214",
+        "id": "TX4214CDPROXY1"
+    },
+    {
+        "ip": "",
+        "groupid": "TX4214",
+        "id": "TX4214CDPROXY2"
+    },
+    {
+        "ip": "193.112.130.94",
+        "groupid": "TX8747",
+        "id": "TX8747GZPROXY5"
+    },
+    {
+        "ip": "139.199.123.84",
+        "groupid": "TX7599",
+        "id": "TX7599BJB1"
+    },
+    {
+        "ip": "140.143.249.164",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLBJPROXY3"
+    },
+    {
+        "ip": "192.144.136.156",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLBJPROXY4"
+    },
+    {
+        "ip": "192.144.174.12",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLBJPROXY1"
+    },
+    {
+        "ip": "140.143.226.113",
+        "groupid": "TXCOOL",
+        "id": "TXCOOLBJPROXY2"
+    }
+]
