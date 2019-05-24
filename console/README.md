@@ -9,3 +9,9 @@ script/generateConsole.sh
 ```
 curl https://raw.githubusercontent.com/spirit1453/script/master/task/deployConsole.sh|bash
 ```
+
+## account
+ admin/admin
+ 
+## agent
+测试agentID: agent_test
