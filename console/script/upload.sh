@@ -1,5 +1,6 @@
 #!/bin/bash
 
+STARTTIME=$(date +'%s')
 #本地目录
 SRCDIR=$(dirname "$PWD")"/generated"
 #FTP目录
@@ -16,5 +17,6 @@ rename ${FILE} ${old}
 rename ${cached} ${FILE}
 exit
 EOF
-
 echo "upload console.zip to server successfully"
+ENDTIME=$(date +%s)
+echo "It takes $(expr $ENDTIME - $STARTTIME) seconds to complete this task"
