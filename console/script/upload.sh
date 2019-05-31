@@ -12,7 +12,6 @@ sftp root@192.144.200.234<< EOF
 cd ${DESDIR}/
 lcd ${SRCDIR}
 put ${FILE} ${cached}
-rm ${old}
 rename ${FILE} ${old}
 rename ${cached} ${FILE}
 exit
